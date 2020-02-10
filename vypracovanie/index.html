@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Testcredit.cz</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:500,300&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src="js/my.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md sticky-top">
+<div class="container-fluid">
+	<a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
+	<button type="button" class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#navbarResponsive">
+    	<span class="navbar-toggler-icon"></span>
+ 	 </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+  	<ul class="navbar-nav ml-auto">
+  		<li class="nav-item">
+  			<a id="zadost-btn" scroll="zadost" class="nav-link">Jak postupovat</a>
+  		</li>
+  		<li class="nav-item">
+  			<a id="vyhody-btn" scroll="vyhody" class="nav-link">Výhody pujčky</a>
+  		</li>
+  		<li class="nav-item">
+  			<a id="reference-btn" scroll="reference" class="nav-link">Reference</a>
+  		</li>
+  		<li  class="nav-item active">
+  			<a id="formular-btn" scroll="formular" class="nav-link">Chci si pujčit</a>
+  		</li>
+  	</ul>
+  </div>
+</div>	
+</nav>
+
+<!-- Intro -->
+<div class="sectionWrapper">
+	<div id="section1" class="section">
+		<div class="section-inner">
+			<div class="container intro ">
+				<div class="row testcredit-header">
+					<div class="col-12">
+						<h1>Testcredit pujčka až do 250 000 KČ</h1> <!-- Testcredit pujčka až do 250 000 KČ -->
+						<p class="lead">Pújčte si na cokoliv jednoduše online!</p>
+					</div>
+				</div>
+				<div class="row btns">
+					<div class="col-md-6">
+						<button type="button" class="btn btn-primary" scroll="formular">Chci si pújčit</button>
+					</div>
+					<div class="col-md-6">
+						<button type="button" class="btn btn-outline-secondary" scroll="vyhody">Výhody</button>
+					</div>
+				</div>
+				<div class="row posledni-zadatel">
+					<div class="col-12">
+						<p>Poslední žádatel:</p>
+						<h5>Natálie, Vsetín. <br> Pani Natálie dnes požádala o 45 500 Kč.</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Vyhody Pujcky -->
+	<div id="section2" class="section">
+		<div class="section-inner">
+			<div class="container vyhody-pujcky">
+				<div id="vyhody" class="row vyhody-header">
+					<div class="col-12">
+						<h2>Výhody pújčky</h2>
+					</div>
+				</div>
+				<div class="row icons">
+					<div class="col-md-3">
+						<img src="img/identity-theft.png" alt="identity">
+						<h5>Online žádost</h5>
+						<p>Pomocí <a scroll="formular">online formuláře</a> je získaní pújčky rychlé a jednoduché.</p>
+					</div>
+					<div class="col-md-3">
+						<img src="img/management.png" alt="identity">
+						<h5>Rychlost</h5>
+						<p>Vaší žádost okamžitě zpracuje automatizovaný systém.</p>
+					</div>
+					<div class="col-md-3">
+						<img src="img/planning.png" alt="identity">
+						<h5>Parametry pújčky</h5>
+						<p>Bezúčelová pújčka 4 000 Kč - 250 000 Kč.</p>
+					</div>
+					<div class="col-md-3">
+						<img src="img/handshake.png" alt="identity">
+						<h5>Jasné podmínky</h5>
+						<p>Peníze múžete získat bez zbytočného papírovaní a s výhodnými podmínkami.</p>
+					</div>
+				</div>
+				<div class="row dnesHeader">
+					<div class="col-12"> 
+						<h4>Dnes požádalo o pújčku již 87 klientú.</h4> <!-- zvyraznit posledne 3 slova {{ num_of_clients }} -->
+					</div>
+				</div>
+				<div class="row btns">
+					<div class="col-md-6">
+						<button type="button" class="btn btn-primary">Chci se pridat</button>
+					</div>
+					<div class="col-md-6">
+						<button type="button" class="btn btn-outline-secondary">Jak požádat o pújčku</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Nezavazna zadost -->
+	<div id="section3" class="section">
+		<div class="section-inner">
+			<div class="container nezavazna-zadost">
+				<div class="row nezavezna-section">
+					<div id="zadost" class="col-md-6">
+						<div class="row zadost-header">
+							<div class="col-12">
+								<h2>NEZÁVAZNÁ žádost</h2>
+								<p>Není vám něco jasné, nebo se chcete něco zeptat? Vyplňte nezávaznou žádost a obchodní zástupce poskytovatele vám zodpoví všechny otázky</p>
+							</div>
+						</div>
+						<div class="row rectangles">
+							<div class="col-md-2">
+								<h1>1.</h1>	
+							</div>
+							<div class="col-md-10">
+								<h4>Vyplňte nezávaznou žádost</h4>
+								<p>Pokud máte zájem o pújčku, nebo se chcete zeptat, vyplňte nezávaznou žádost.</p>
+							</div>
+						</div>
+						<div class="row rectangles">
+							<div class="col-md-2">
+								<h1>2.</h1>
+							</div>
+							<div class="col-md-10">
+								<h4>Budete kontaktován</h4>
+								<p>Kontaktuje vás obchodní zástupce poskytovatele a probere s vámi detaily.</p>
+							</div>
+						</div>
+						<div class="row rectangles">
+							<div class="col-md-2">
+								<h1>3.</h1>
+							</div>
+							<div class="col-md-10">
+								<h4>Hotovo!</h4>
+								<p>Po podepsání smlouvy s poskytovatelem vám bodou peníze odeslány na účet</p>
+							</div>
+						</div>
+					</div>
+					<div id="formular" class="col-md-6">
+						<div class="d-md-none"><img src="img/form-mobile.png" ></div>
+						<div class="d-none d-md-block"><img src="img/form-desktop.png" class="img-fluid"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Reference -->
+	<div id="section4" class="section">
+		<div class="section-inner">
+			<div class="container reference">
+				<div id="reference" class="row reference-header">
+					<div class="col-12">
+						<h2>Reference</h2>
+						<p>spokojených zákazníku</p>
+					</div>
+				</div>
+				<div class="d-md-none">
+					<div class="row car">
+						<div class="col-12">
+							<div id="slider" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#slider" data-slide-to="0"></li>
+									<li data-target="#slider" data-slide-to="1"></li>
+									<li data-target="#slider" data-slide-to="2" class="active"></li>
+								</ol>
+						
+								<div class="carousel-inner">
+									<div class="carousel-item">
+										<p>Diky Testcredit jsem se dostala z nepřijemné finanční situace.
+											Měl jsem nečakané výdaje a žádne úspory. 
+											S VIP pújčkou jsem však všechno rychle vyřešil</p>
+										<h5>Alena, Brno</h5>
+									</div>
+									<div class="carousel-item">
+										<p>Rychlost a žádne zbytečné papírovaní, to jsou věci, které lidé vždy ocení.
+											Online pújčka mi pomohla, když jsem to nejvííc potřeboval
+										</p>
+										<h5>Petr, Ostrava</h5>
+									</div>
+									<div class="carousel-item active">
+										<p>Perfektní! Vše probíhalo tak jak mělo. Velmi Příjemné a 
+											jednoduché vybavení. Vřele odporučuju i náročným zákazníkúm.
+										</p>
+										<h5>Jan, Beroun</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="d-none d-md-block">
+					<div class="row blocks">
+						<div class="col-md-4" id="block">
+							<p>Diky Testcredit jsem se dostala z nepřijemné finanční situace. 
+								Měl jsem nečakané výdaje a žádne úspory. S VIP pújčkou jsem však všechno rychle vyřešil</p>
+							<h5>Alena, Brno</h5>
+						</div>
+						<div class="col-md-4" id="block">
+							<p>Rychlost a žádne zbytečné papírovaní, to jsou věci, které lidé vždy ocení.
+								Online pújčka mi pomohla, když jsem to nejvííc potřeboval
+							</p>
+							<h5>Petr, Ostrava</h5>
+						</div>
+						<div class="col-md-4" id="block">
+							<p>Perfektní! Vše probíhalo tak jak mělo. Velmi Příjemné a jednoduché vybavení. Vřele odporučuju i náročným zákazníkúm.
+							</p>
+							<h5>Jan, Beroun</h5>
+						</div>
+						<div class="row btns">
+							<div class="col-12">
+								<button type="button" class="btn btn-primary">Chci se pridat</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+	<hr>
+	<div class="footer-copyright text-center py-3">© 2019 Testcredit.cz Všechny práva vyhrazené.
+	</div>
+</footer>
+
+</body>
+</html>
